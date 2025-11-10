@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 
 const NAV_ITEMS = [
     { href: "/about", label: "Chi Siamo" },
-    { href: "#classi", label: "Classi" },
-    { href: "#contatti", label: "Contattaci" },
+    { href: "/classi", label: "Classi" },
+    { href: "/contact", label: "Contattaci" },
 ];
 
 const NAVBAR_H = 64; // h-16 = 64px

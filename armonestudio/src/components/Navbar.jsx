@@ -7,7 +7,7 @@ const NAV_ITEMS = [
     { href: "/contact", label: "Contattaci" },
 ];
 
-const NAVBAR_H = 64; // h-16 = 64px
+const NAVBAR_H = 64;
 
 export default function Navbar() {
     const { pathname } = useLocation();
@@ -75,15 +75,14 @@ export default function Navbar() {
                     {open && (
                         <ul className="absolute right-0 top-[calc(100%+8px)] w-48 bg-brand-100 border border-brand-100 rounded-xl p-2 shadow-xl z-[9999]">
                             {NAV_ITEMS.map((item) => (
-                                <li key={item.href}>
-                                    <a
-                                        href={item.href}
-                                        onClick={(e) => scrollOrNavigate(e, item.href)}
-                                        className="block px-3 py-2 rounded hover:bg-brand-100 text-brand-400"
-                                    >
-                                        {item.label}
-                                    </a>
-                                </li>
+
+                                <Link
+                                    key={item.href}
+                                    to={item.href}
+                                    className="block px-3 py-2 rounded hover:bg-brand-100 text-brand-400"
+                                >
+                                    {item.label}
+                                </Link>
                             ))}
                         </ul>
                     )}

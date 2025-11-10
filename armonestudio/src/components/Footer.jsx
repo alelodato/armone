@@ -24,6 +24,9 @@ export default function Footer(){
           <a href="#" className="font-body text-sm text-brand-400 hover:opacity-80">Privacy</a>
           <a href="#" className="font-body text-sm text-brand-400 hover:opacity-80">Cookie</a>
         </div>
+        <div className="flex gap-4">
+            <p>Sito Web By <a href="https://www.alessiolodato.dev" target="_blank" rel="noopener noreferrer">Alessio Lodato</a></p>
+        </div>
       </div>
     </footer>
   )

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-brand-100 text-brand-400 font-body; }
+h1,h2,h3 { @apply font-heading text-brand-400; }
+
+.container { @apply max-w-6xl mx-auto px-5; }
+.section { @apply py-16 md:py-24; }
+.btn { @apply inline-block bg-brand-300 text-brand-50 font-cta text-sm tracking-wide uppercase px-6 py-3 rounded-full hover:bg-brand-200 transition; }
+.card { @apply bg-brand-100 text-brand-400 rounded-xl shadow; }

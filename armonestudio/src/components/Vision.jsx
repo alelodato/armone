@@ -20,7 +20,7 @@ export default function Vision() {
 
         {/* TESTO */}
         <div className="flex flex-col justify-center h-full px-4 md:px-8">
-          <p className="font-body text-brand-400 text-lg md:text-xl leading-relaxed text-center md:text-left">
+          <p className="font-body text-brand-400 text-base sm:text-lg md:text-xl leading-relaxed max-w-prose mx-auto md:mx-0">
             Da Armonē Studio crediamo che il benessere nasca
             dall’equilibrio tra corpo e mente. Il nostro spazio è pensato per
             offrire un’esperienza di Pilates contemporaneo, dove movimento,

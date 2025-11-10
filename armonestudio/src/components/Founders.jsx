@@ -20,7 +20,7 @@ export default function Founders() {
       <div className="container grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* TESTO */}
         <div className="flex flex-col justify-center h-full px-4 md:px-8 text-center md:text-left">
-          <h2 className="font-heading text-brand-200 text-3xl sm:text-4xl md:text-5xl mb-4 md:mb-6">
+          <h2 className="font-heading text-brand-200 text-5xl sm:text-4xl md:text-5xl mb-4 md:mb-6">
             Le Fondatrici
           </h2>
           <p className="font-body text-brand-400 text-base sm:text-lg md:text-xl leading-relaxed">
@@ -45,7 +45,7 @@ export default function Founders() {
                 loading="lazy"
               />
               <div className="bg-brand-50 p-4 text-center">
-                <p className="font-heading text-brand-200 text-lg md:text-xl">
+                <p className="font-heading text-brand-200 text-2xl md:text-3xl">
                   {p.name}
                 </p>
                 <p className="font-body text-brand-400 text-sm md:text-base">

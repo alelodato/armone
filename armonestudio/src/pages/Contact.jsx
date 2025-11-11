@@ -55,7 +55,7 @@ export default function Contact() {
           <aside className="bg-brand-100 rounded-xl p-6 md:p-8 border border-brand-100">
             <h2 className="font-heading text-brand-400 text-2xl mb-3">Armonē Studio</h2>
             <ul className="font-body text-brand-400/90 space-y-2">
-              <li><strong>Indirizzo:</strong> Viale Benessere 224, Roma</li>
+              <li><strong>Indirizzo:</strong> Viale Palestra 224, Roma</li>
               <li><strong>Email:</strong> armonestudio@fit.com</li>
               <li><strong>Telefono:</strong> 06678837843</li>
             </ul>

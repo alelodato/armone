@@ -1,17 +1,36 @@
-// src/pages/About.jsx
+
 export default function About() {
+  const HERO_IMG = "/assets/about.jpg";
+  const VALUE_IMAGES = {
+    intimate: "/assets/ambiente.jpg",
+    progressive: "/assets/about-posturale.jpg",
+    teachers: "/assets/about-classi.jpg",
+  };
+
   return (
     <main className="pt-16 md:pt-20">
-      {/* Hero breve */}
-      <section className="section">
-        <div className="container text-center">
-          <h1 className="font-heading text-brand-400 text-4xl md:text-5xl drop-shadow-sm">
-            Chi Siamo
-          </h1>
-          <p className="font-body text-brand-400/90 text-base md:text-lg mt-4 max-w-2xl mx-auto">
-            Armonē Studio è uno spazio dedicato al benessere consapevole: pilates,
-            postura, respiro e movimento in armonia.
-          </p>
+      {/* HERO con immagine + overlay */}
+      <section className="relative">
+        {/* immagine full-bleed */}
+        <img
+          src={HERO_IMG}
+          alt="Interno luminoso di Armonē Studio"
+          className="w-full h-[56vh] md:h-[68vh] object-cover"
+          loading="eager"
+        />
+        {/* overlay per migliorare la leggibilità del testo */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/25 to-transparent" />
+        {/* testo */}
+        <div className="absolute inset-0 flex items-center">
+          <div className="container text-center">
+            <h1 className="font-heading text-brand-50 drop-shadow-sm text-4xl md:text-6xl">
+              Chi Siamo
+            </h1>
+            <p className="font-body text-brand-50/90 max-w-3xl mx-auto mt-4 md:mt-6 text-base md:text-xl leading-relaxed">
+              Armonē Studio è uno spazio dedicato al benessere consapevole:
+              pilates, postura, respiro e movimento in armonia.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -57,7 +76,7 @@ export default function About() {
             <dl className="font-body text-brand-400/90 space-y-3">
               <div>
                 <dt className="text-sm uppercase tracking-wide">Location</dt>
-                <dd className="text-base">Viale Benessere 224, Roma (RM)</dd>
+                <dd className="text-base">Viale Palestra 224, Roma (RM)</dd>
               </div>
               <div>
                 <dt className="text-sm uppercase tracking-wide">Fondazione</dt>
@@ -76,7 +95,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Valori “card” sintetici */}
+      {/* Valori con immagini */}
       <section className="section">
         <div className="container grid gap-6 md:grid-cols-3">
           {[
@@ -84,25 +103,40 @@ export default function About() {
               title: "Ambiente Intimo",
               body:
                 "Spazi curati, luminosi e accoglienti per un’esperienza serena e concentrata.",
+              img: VALUE_IMAGES.intimate,
+              alt: "Sala Pilates intima e luminosa",
             },
             {
               title: "Metodo Progressivo",
               body:
                 "Percorsi su misura, dal livello base all’avanzato, con attenzione alla postura.",
+              img: VALUE_IMAGES.progressive,
+              alt: "Lezione Pilates con progressione degli esercizi",
             },
             {
               title: "Insegnanti Certificati",
               body:
                 "Professionalità e sensibilità per accompagnarti con sicurezza e motivazione.",
+              img: VALUE_IMAGES.teachers,
+              alt: "Insegnante certificata durante una lezione",
             },
           ].map((c) => (
             <div
               key={c.title}
-              className="rounded-xl overflow-hidden border border-brand-100 bg-brand-50 shadow-sm"
+              className="rounded-xl overflow-hidden border border-brand-100 bg-brand-50 shadow-sm flex flex-col"
             >
               <div className="bg-brand-200/90 px-6 py-4">
                 <h4 className="font-heading text-brand-50 text-lg">{c.title}</h4>
               </div>
+
+              {/* immagine sotto l’header */}
+              <img
+                src={c.img}
+                alt={c.alt}
+                className="w-full h-48 md:h-56 object-cover"
+                loading="lazy"
+              />
+
               <p className="font-body text-brand-400 px-6 py-5 leading-relaxed">
                 {c.body}
               </p>
@@ -118,9 +152,9 @@ export default function About() {
             Dove Siamo
           </h2>
 
-          {/* Wrapper responsive (16:9) senza plugin */}
+          {/* Wrapper responsive (16:9) */}
           <div className="relative w-full rounded-xl overflow-hidden border border-brand-100 shadow">
-            <div className="pb-[56.25%]"></div>
+            <div className="pb-[56.25%]" />
             <iframe
               title="Armonē Studio - Mappa"
               className="absolute inset-0 w-full h-full"

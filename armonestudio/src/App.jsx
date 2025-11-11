@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Classi from "./pages/Classi";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import PrenotaClasse from "./pages/PrenotaClasse.jsx";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/classi" element={<Classi />} />
+        <Route path="/prenota/:slug" element={<PrenotaClasse />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />

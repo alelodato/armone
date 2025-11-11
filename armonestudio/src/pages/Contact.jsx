@@ -39,7 +39,7 @@ export default function Contact() {
       {/* Intro */}
       <section className="relative section">
         <img
-          src="public/assets/contact-bg.jpg"
+          src="/assets/contact-bg.jpg"
           alt="Interno luminoso di Armonē Studio"
           className="absolute inset-0 w-full h-full object-cover object-center"
           loading="lazy"

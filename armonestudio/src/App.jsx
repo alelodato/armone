@@ -7,6 +7,9 @@ import Classi from "./pages/Classi";
 import Contact from "./pages/Contact";
 import PrenotaClasse from "./pages/PrenotaClasse.jsx";
 import BackToTop from "./components/BackToTop";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
+import CookieBanner from "./components/CookieBanner"
 
 export default function App() {
   return (
@@ -18,9 +21,12 @@ export default function App() {
         <Route path="/classi" element={<Classi />} />
         <Route path="/prenota/:slug" element={<PrenotaClasse />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
       </Routes>
       <Footer />
       <BackToTop />
+      <CookieBanner />
     </>
   )
 }

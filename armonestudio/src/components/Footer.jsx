@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Footer(){
   return (
     <footer id="contatti" className="section bg-brand-50 border-t border-brand-100">
@@ -20,9 +22,9 @@ export default function Footer(){
       <div className="container mt-10 border-t border-brand-100 pt-6 flex flex-col sm:flex-row items-center justify-between">
         <p className="font-body text-brand-400 text-sm">© {new Date().getFullYear()} Armonē Studio</p>
         <div className="flex gap-4">
-          <a href="#" className="font-body text-sm text-brand-400 hover:opacity-80">Instagram</a>
-          <a href="#" className="font-body text-sm text-brand-400 hover:opacity-80">Privacy</a>
-          <a href="#" className="font-body text-sm text-brand-400 hover:opacity-80">Cookie</a>
+          <a href="https://www.instagram.com" target="_blank" className="font-body text-sm text-brand-400 hover:opacity-80">Instagram</a>
+          <Link to="/privacy-policy" className="font-body text-sm text-brand-400 hover:opacity-80">Privacy</Link>
+          <Link to="/cookie-policy" className="font-body text-sm text-brand-400 hover:opacity-80">Cookie</Link>
         </div>
         <div className="flex gap-4">
             <p>Sito Web By <a href="https://www.alessiolodato.dev" target="_blank" rel="noopener noreferrer">Alessio Lodato</a></p>

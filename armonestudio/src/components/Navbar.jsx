@@ -31,7 +31,7 @@ export default function Navbar() {
             const el = document.getElementById(id);
             if (!el) return;
             const top =
-                el.getBoundingClientRect().top + window.scrollY - NAVBAR_H - 8; // piccolo margine
+                el.getBoundingClientRect().top + window.scrollY - NAVBAR_H - 8;
             window.scrollTo({ top, behavior: "smooth" });
             setOpen(false);
         }

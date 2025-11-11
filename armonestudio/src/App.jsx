@@ -5,14 +5,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Classi from "./pages/Classi";
 import Contact from "./pages/Contact";
-import ScrollToTop from "./components/ScrollToTop.jsx";
 import PrenotaClasse from "./pages/PrenotaClasse.jsx";
 
 export default function App() {
   return (
     <>
       <Navbar />
-      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

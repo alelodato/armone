@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Classi from "./pages/Classi";
 import Contact from "./pages/Contact";
 import PrenotaClasse from "./pages/PrenotaClasse.jsx";
+import BackToTop from "./components/BackToTop";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
+      <BackToTop />
     </>
   )
 }

@@ -16,17 +16,18 @@ export default function About() {
           src={HERO_IMG}
           alt="Interno luminoso di Armonē Studio"
           className="w-full h-[56vh] md:h-[68vh] object-cover"
-          loading="eager"
+          loading="lazy"
         />
         {/* overlay per migliorare la leggibilità del testo */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-black/25 to-transparent" />
+        <div className="absolute inset-0 bg-black/70" />
         {/* testo */}
         <div className="absolute inset-0 flex items-center">
           <div className="container text-center">
-            <h1 className="font-heading text-brand-50 drop-shadow-sm text-4xl md:text-6xl">
-              Chi Siamo
+            <h1 className="font-heading text-brand-50 drop-shadow-sm text-5xl md:text-7xl">
+              CHI SIAMO
             </h1>
-            <p className="font-body text-brand-50/90 max-w-3xl mx-auto mt-4 md:mt-6 text-base md:text-xl leading-relaxed">
+            <p className="font-body text-brand-50/90 max-w-3xl mx-auto mt-4 md:mt-6 text-base md:text-xl 
+             lg:text-2xl leading-relaxed">
               Armonē Studio è uno spazio dedicato al benessere consapevole:
               pilates, postura, respiro e movimento in armonia.
             </p>
@@ -38,8 +39,8 @@ export default function About() {
       <section className="section">
         <div className="container grid gap-10 md:grid-cols-3 items-start">
           {/* Testo */}
-          <article className="md:col-span-2 bg-brand-100 rounded-xl p-6 md:p-8">
-            <h2 className="font-heading text-brand-400 text-2xl md:text-3xl mb-4">
+          <article className="md:col-span-2 bg-brand-200 rounded-xl p-6 md:p-8">
+            <h2 className="font-heading text-brand-400 text-3xl md:text-5xl mb-4">
               La nostra storia
             </h2>
             <p className="font-body text-brand-400 leading-relaxed">
@@ -49,8 +50,7 @@ export default function About() {
               certificati e attenti, per aiutarti a migliorare postura, forza e
               serenità interiore.
             </p>
-
-            <h3 className="font-heading text-brand-400 text-xl md:text-2xl mt-8 mb-3">
+            <h3 className="font-heading text-brand-400 text-3xl md:text-4xl mt-8 mb-3">
               Valori
             </h3>
             <ul className="font-body text-brand-400/90 space-y-2 pl-5 list-disc">
@@ -59,8 +59,7 @@ export default function About() {
               <li>Consapevolezza del movimento e del respiro</li>
               <li>Qualità didattica e attenzione ai dettagli</li>
             </ul>
-
-            <h3 className="font-heading text-brand-400 text-xl md:text-2xl mt-8 mb-3">
+            <h3 className="font-heading text-brand-400 text-3xl md:text-4xl mt-8 mb-3">
               Missione
             </h3>
             <p className="font-body text-brand-400 leading-relaxed">
@@ -148,13 +147,13 @@ export default function About() {
       {/* Mappa */}
       <section className="section">
         <div className="container">
-          <h2 className="font-heading text-brand-400 text-2xl md:text-3xl mb-4">
+          <h2 className="font-heading text-brand-400 text-3xl md:text-4xl mb-4">
             Dove Siamo
           </h2>
 
           {/* Wrapper responsive (16:9) */}
           <div className="relative w-full rounded-xl overflow-hidden border border-brand-100 shadow">
-            <div className="pb-[56.25%]" />
+            <div className="pb-[40%]" />
             <iframe
               title="Armonē Studio - Mappa"
               className="absolute inset-0 w-full h-full"

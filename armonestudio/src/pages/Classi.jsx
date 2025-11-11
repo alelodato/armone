@@ -50,17 +50,30 @@ export default function Classes() {
   return (
     <main className="pt-16 md:pt-20">
       {/* Hero / Intro */}
-      <section id="classi" className="section">
-        <div className="container text-center">
-          <h1 className="font-heading text-brand-400 text-4xl md:text-5xl drop-shadow-sm">
-            Le nostre classi
-          </h1>
-          <p className="font-body text-brand-400/90 text-base md:text-lg mt-4 max-w-2xl mx-auto">
-            Programmi progressivi e personalizzati per ritrovare equilibrio, forza
-            e fluidità. Scegli la classe più adatta al tuo momento.
-          </p>
-        </div>
-      </section>
+      <section id="classi" className="relative section">
+  {/* Immagine di sfondo */}
+  <img
+    src="/assets/classi-hero.jpg"
+    alt="Interno luminoso di Armonē Studio"
+    className="absolute inset-0 w-full h-full object-cover object-center"
+    loading="lazy"
+  />
+
+  {/* Overlay */}
+  <div className="absolute inset-0 bg-black/70" />
+
+  {/* Testo */}
+  <div className="relative z-10 text-center py-32 px-4">
+    <h1 className="font-heading text-brand-100 text-4xl md:text-6xl drop-shadow-sm">
+      LE NOSTRE CLASSI
+    </h1>
+    <p className="font-body text-brand-100/90 text-lg md:text-xl mt-4 max-w-2xl mx-auto">
+      Programmi progressivi e personalizzati per ritrovare equilibrio, forza e fluidità.
+      Scegli la classe più adatta al tuo momento.
+    </p>
+  </div>
+</section>
+
 
       {/* Cards delle classi */}
       <section className="section">
@@ -114,20 +127,21 @@ export default function Classes() {
                 </ul>
 
                 {/* CTA */}
-                <div className="mt-6 flex gap-3">
+                <div className="mt-6 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center sm:justify-start">
                   <Link
                     to={`/prenota?classe=${encodeURIComponent(c.slug)}`}
-                    className="inline-flex items-center rounded-full px-5 py-3 bg-brand-300 text-brand-50 font-cta tracking-wide uppercase text-sm hover:opacity-90 transition"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-brand-300 text-brand-50 font-cta text-sm tracking-wide hover:bg-brand-400 transition"
                   >
-                    Prenota ora
+                    PRENOTA ORA
                   </Link>
-
+                  <Link to="/contact">
                   <a
                     href="#contatti"
-                    className="inline-flex items-center rounded-full px-5 py-3 border border-brand-300/50 bg-brand-50 text-brand-400 font-body hover:bg-brand-100 transition"
+                    className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-brand-400 border border-brand-50 text-brand-50 font-cta text-sm tracking-wide hover:bg-brand-300 transition"
                   >
-                    Richiedi informazioni
+                    RICHIEDI INFORMAZIONI
                   </a>
+                  </Link>   
                 </div>
               </div>
             </article>

@@ -37,12 +37,19 @@ export default function Contact() {
   return (
     <main className="pt-16 md:pt-20">
       {/* Intro */}
-      <section className="section">
-        <div className="container text-center">
-          <h1 className="font-heading text-brand-400 text-4xl md:text-5xl drop-shadow-sm">
-            Contattaci
+      <section className="relative section">
+        <img
+          src="public/assets/contact-bg.jpg"
+          alt="Interno luminoso di Armonē Studio"
+          className="absolute inset-0 w-full h-full object-cover object-center"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-black/70" />
+        <div className="relative container text-center">
+          <h1 className="font-heading text-brand-50 text-4xl md:text-6xl drop-shadow-sm">
+            CONTATTACI
           </h1>
-          <p className="font-body text-brand-400/90 text-base md:text-lg mt-4 max-w-2xl mx-auto">
+          <p className="font-body text-brand-50 text-lg md:text-2lg mt-4 max-w-3xl mx-auto">
             Domande, prenotazioni o informazioni sui corsi? Scrivici: ti rispondiamo al più presto.
           </p>
         </div>

@@ -9,3 +9,12 @@ h1,h2,h3 { @apply font-heading text-brand-400; }
 .section { @apply py-16 md:py-24; }
 .btn { @apply inline-block bg-brand-300 text-brand-50 font-cta text-sm tracking-wide uppercase px-6 py-3 rounded-full hover:bg-brand-200 transition; }
 .card { @apply bg-brand-100 text-brand-400 rounded-xl shadow; }
+
+/* ---- Cal.com inline: rendi l'iframe davvero responsivo ---- */
+.cal-wrapper > * { height: 100% !important; }
+.cal-wrapper iframe {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+

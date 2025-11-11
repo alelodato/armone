@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Hero() {
     return (
         <section className="relative">
@@ -21,12 +23,12 @@ export default function Hero() {
                     </h1>
 
                     <div className="mt-6 flex flex-wrap gap-3">
-                        <a href="#prenota" className="inline-flex items-center justify-center px-6 py-3 rounded-full font-body text-sm md:text-base font-medium tracking-wide 
-    bg-[#97C68A] text-white shadow-md hover:bg-[#8AB57C] transition">PRENOTA ORA</a>
-                        <a href="#classi" className="inline-flex items-center rounded-full text-sm md:text-base font-medium
+                        <Link to="/prenota/reformer" className="inline-flex items-center justify-center px-6 py-3 rounded-full font-body text-sm md:text-base font-medium tracking-wide 
+    bg-[#97C68A] text-white shadow-md hover:bg-[#8AB57C] transition">PRENOTA ORA</Link>
+                        <Link to="/classi" className="inline-flex items-center rounded-full text-sm md:text-base font-medium
                         px-6 py-3 border border-brand-200 text-brand-50/95 bg-brand-400/30 backdrop-blur hover:bg-brand-400/40 transition">
                             LE NOSTRE CLASSI
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

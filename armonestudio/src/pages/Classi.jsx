@@ -9,7 +9,7 @@ const CLASSES = [
     image: "/assets/Reformer.webp",
     desc:
       "Lezione su Reformer per migliorare forza, allineamento e controllo. Il carrello e le molle permettono una progressione dolce ma efficace, adatta sia a principianti che avanzati. " +
-      "Orari: Lun–Ven 08:00 • 09:30 • 18:00 • 19:30 — Sab 10:00 • 11:30. Capienza: 6 posti.",
+      "Orari: Lun–Ven 08:00 • 09:30 • 18:00 • 19:30 — Sab 10:00 • 11:30.",
   },
   {
     slug: "matwork",
@@ -19,7 +19,7 @@ const CLASSES = [
     image: "/assets/Matwork.webp",
     desc:
       "Sequenze al tappetino con piccoli attrezzi (ring, soft ball, elastici). Focus su respirazione, mobilità e precisione del gesto, per costruire consapevolezza e fluidità. " +
-      "Orari: Lun–Ven 07:30 • 12:30 • 17:00 • 20:30 — Sab 09:00. Capienza: 12 posti.",
+      "Orari: Lun–Ven 07:30 • 12:30 • 17:00 • 20:30 — Sab 09:00.",
   },
   {
     slug: "posturale",
@@ -29,7 +29,7 @@ const CLASSES = [
     image: "/assets/Posturale.webp",
     desc:
       "Sessione mirata a decomprimere, allungare e riequilibrare. Ideale per chi sta molte ore seduto o avverte rigidità a schiena, anche e spalle. " +
-      "Orari: Lun–Ven 08:45 • 13:30 • 18:45 — Sab 11:15. Capienza: 10 posti.",
+      "Orari: Lun–Ven 08:45 • 13:30 • 18:45 — Sab 11:15.",
   },
 ];
 

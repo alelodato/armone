@@ -152,7 +152,7 @@ export default function Classes() {
       {/* Paragrafo di chiusura */}
       <section className="section">
         <div className="container">
-          <p className="font-body text-brand-400 leading-relaxed text-center max-w-3xl mx-auto">
+          <p className="font-body text-brand-400 leading-relaxed text-center max-w-5xl mx-auto">
             Ogni percorso è pensato per essere sostenibile e personalizzato.
             Se hai dubbi su quale classe scegliere, scrivici: ti aiutiamo a comporre
             il programma più adatto ai tuoi obiettivi e al tuo livello.

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Errore del server — Armonē Studio</title>
+  <style>
+    :root{
+      --bg1:#F7F5F1; --bg2:#ECE7DF; --fg:#2E3A34; --cta:#97C68A; --ctaHover:#7FB874;
+    }
+    *{box-sizing:border-box} html,body{height:100%}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, sans-serif;
+      color:var(--fg);
+      background: linear-gradient(to bottom, var(--bg1), var(--bg2));
+      display:flex; align-items:center; justify-content:center; text-align:center; padding:24px;
+    }
+    .wrap{max-width:640px; animation:fade .6s ease-in-out both}
+    h1{font-size:80px; line-height:1; margin:0 0 8px}
+    p{margin:0 0 24px; font-size:18px; opacity:.85}
+    a.btn{
+      display:inline-block; padding:12px 20px; border-radius:999px; color:#fff; background:var(--cta);
+      text-decoration:none; transition:background .2s ease;
+      border:1px solid rgba(0,0,0,.06)
+    }
+    a.btn:hover{background:var(--ctaHover)}
+    @media (min-width:768px){ h1{font-size:112px} p{font-size:20px} }
+    @keyframes fade{from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main" aria-labelledby="t">
+    <h1 id="t">500</h1>
+    <p>Qualcosa è andato storto. Riprova tra poco o torna alla Home.</p>
+    <a class="btn" href="/">Torna alla Home</a>
+  </main>
+</body>
+</html>

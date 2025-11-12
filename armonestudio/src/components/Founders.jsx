@@ -1,11 +1,11 @@
 const founders = [
   {
-    name: "Serena Belletti",
+    name: "Maria Rossi",
     role: "Fondatrice & Program Manager",
-    img: "/assets/serena.jpg", // ← niente "public/"
+    img: "/assets/serena.jpg",
   },
   {
-    name: "Alice Moricelli",
+    name: "Anna Bianchi",
     role: "Fondatrice & Insegnante",
     img: "/assets/alice.jpg",
   },

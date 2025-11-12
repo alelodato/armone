@@ -12,7 +12,7 @@ export default function Footer(){
           <p className="font-body text-brand-400"><span className="font-heading">Email:</span><br/>armonestudio@fit.com</p>
         </div>
         <div>
-          <p className="font-body text-brand-400"><span className="font-heading">Indirizzo:</span><br/>Viale Palestra 224, Roma, RM</p>
+          <p className="font-body text-brand-400"><span className="font-heading">Indirizzo:</span><br/>Viale Pilates 1, Roma, RM</p>
         </div>
         <div>
           <p className="font-body text-brand-400"><span className="font-heading">Telefono:</span><br/>06678837843</p>

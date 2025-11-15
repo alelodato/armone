@@ -24,8 +24,8 @@ export default function Founders() {
             Le Fondatrici
           </h2>
           <p className="font-body text-brand-400 text-base sm:text-lg md:text-xl leading-relaxed">
-            Armonē Studio nasce dall’incontro tra Serena Belletti e Alice
-            Moricelli, due insegnanti di Pilates unite da una visione comune:
+            Armonē Studio nasce dall’incontro tra Maria Rossi e Anna Bianchi, 
+            due insegnanti di Pilates unite da una visione comune:
             creare uno spazio dove il movimento sia espressione di equilibrio,
             grazia e consapevolezza. Con anni di esperienza nel settore del
             benessere e una profonda attenzione alla persona, guidano ogni

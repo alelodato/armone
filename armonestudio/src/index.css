@@ -27,3 +27,6 @@ h1,h2,h3 { @apply font-heading text-brand-400; }
   animation: fadeIn 0.6s ease-in-out both;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}

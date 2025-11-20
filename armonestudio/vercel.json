@@ -6,13 +6,13 @@
         }
     ],
     "headers": [
-                        {
-                            "key": "X-Content-Type-Options",
-                            "value": "nosniff"
-                        },
-                        {
-                            "key": "Content-Security-Policy",
-                            "value": "default-src 'self'; frame-src 'self' https://www.google.com https://app.cal.com https://cal.com; frame-ancestors 'self' https://www.google.com;"
-                        }
-                    ]
+        {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+        },
+        {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; frame-src 'self' https://www.google.com https://app.cal.com https://cal.com; frame-ancestors 'self' https://www.google.com;"
+        }
+    ]
 }

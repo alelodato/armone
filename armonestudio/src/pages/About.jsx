@@ -44,7 +44,7 @@ export default function About() {
               La nostra storia
             </h2>
             <p className="font-body text-brand-400 leading-relaxed">
-              Nato a Roma, Armonē Studio è stato fondato con un’idea semplice:
+              Nato a Pomezia, Armonē Studio è stato fondato con un’idea semplice:
               riportare equilibrio tra corpo e mente attraverso un approccio
               contemporaneo al Pilates. Ogni lezione è guidata da insegnanti
               certificati e attenti, per aiutarti a migliorare postura, forza e
@@ -75,7 +75,7 @@ export default function About() {
             <dl className="font-body text-brand-400/90 space-y-3">
               <div>
                 <dt className="text-sm uppercase tracking-wide">Location</dt>
-                <dd className="text-base">Viale Palestra 224, Roma (RM)</dd>
+                <dd className="text-base">Via Esempio 123, Pomezia (RM)</dd>
               </div>
               <div>
                 <dt className="text-sm uppercase tracking-wide">Fondazione</dt>
@@ -83,7 +83,7 @@ export default function About() {
               </div>
               <div>
                 <dt className="text-sm uppercase tracking-wide">Contatti</dt>
-                <dd className="text-base">armonestudio@fit.com • 06678837843</dd>
+                <dd className="text-base">armonestudio@fit.com • 06xxxxxxx</dd>
               </div>
               <div>
                 <dt className="text-sm uppercase tracking-wide">Orari</dt>
@@ -161,7 +161,7 @@ export default function About() {
               referrerPolicy="no-referrer-when-downgrade"
               src={
                 "https://www.google.com/maps?q=" +
-                encodeURIComponent("Viale Benessere 224, Roma, RM") +
+                encodeURIComponent("Via Esempio 123, Pomezia, RM") +
                 "&output=embed"
               }
             />

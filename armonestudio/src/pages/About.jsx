@@ -23,11 +23,10 @@ export default function About() {
         {/* testo */}
         <div className="absolute inset-0 flex items-center">
           <div className="container text-center">
-            <h1 className="font-heading text-brand-50 drop-shadow-sm text-5xl md:text-7xl">
+            <h1 className="font-heading text-brand-50 drop-shadow-sm text-4xl md:text-6xl">
               CHI SIAMO
             </h1>
-            <p className="font-body text-brand-50/90 max-w-3xl mx-auto mt-4 md:mt-6 text-base md:text-xl 
-             lg:text-2xl leading-relaxed">
+            <p className="font-body text-brand-50 text-lg md:text-2lg mt-4 max-w-3xl mx-auto">
               Armonē Studio è uno spazio dedicato al benessere consapevole:
               pilates, postura, respiro e movimento in armonia.
             </p>

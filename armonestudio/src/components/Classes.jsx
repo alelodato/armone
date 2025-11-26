@@ -13,7 +13,7 @@ export default function Classes() {
             className="w-full h-full object-cover"
             loading="lazy"
           />
-          <span className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-brand-200 font-heading text-4xl sm:text-4xl md:text-5xl drop-shadow-sm">
+          <span className="absolute bottom-6 right-10 md:bottom-10 md:right-12 text-brand-200 font-heading text-4xl sm:text-4xl md:text-5xl drop-shadow-sm">
             Classi
           </span>
         </div>

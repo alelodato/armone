@@ -37,15 +37,15 @@ export default function Classes() {
   return (
     <main className="pt-16 md:pt-20">
       {/* Hero / Intro */}
-      <section id="classi" className="relative section">
+      <section id="classi" className="relative section h-[56vh] md:h-[68vh]">
         <img
           src="/assets/classi-hero.jpg"
           alt="Interno luminoso di Armonē Studio"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-[56vh] md:h-[68vh] object-cover object-center"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 text-center py-28 px-4">
+        <div className="relative z-10 text-center">
           <h1 className="font-heading text-brand-100 text-4xl md:text-6xl drop-shadow-sm">
             LE NOSTRE CLASSI
           </h1>

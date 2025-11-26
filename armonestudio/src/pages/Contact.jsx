@@ -37,11 +37,11 @@ export default function Contact() {
   return (
     <main className="pt-16 md:pt-20">
       {/* Intro */}
-      <section className="relative section">
+      <section className="relative section h-[56vh] md:h-[68vh]">
         <img
           src="/assets/contact-bg.jpg"
           alt="Interno luminoso di Armonē Studio"
-          className="absolute inset-0 w-full h-full object-cover object-center"
+          className="absolute inset-0 w-full h-[56vh] md:h-[68vh] object-cover object-center"
           loading="lazy"
         />
         <div className="absolute inset-0 bg-black/70" />
